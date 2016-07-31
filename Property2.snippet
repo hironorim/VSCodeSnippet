@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>プロパティの定義2</Title>
+      <Author>matsuura</Author>
+      <Description>バッキング フィールドを伴うプロパティを定義します。</Description>
+      <Shortcut>Property2</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>PropertyName</ID>
+          <Type>String</Type>
+          <ToolTip>プロパティ名で置き換えます。</ToolTip>
+          <Default>NewProperty</Default>
+        </Literal>
+        <Literal>
+          <ID>PropertyType</ID>
+          <Type>
+          </Type>
+          <ToolTip>プロパティの型で置き換えます。</ToolTip>
+          <Default>String</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="method decl"><![CDATA[Private _$PropertyName$ As $PropertyType$
+Public Property $PropertyName$() As $PropertyType$
+    Get
+        Return _$PropertyName$
+    End Get
+    Set(ByVal value As $PropertyType$)
+        _$PropertyName$ = value
+    End Set
+End Property]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

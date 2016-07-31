@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>クラスの定義</Title>
+      <Author>matsuura</Author>
+      <Description>シンプルなクラスを定義します。</Description>
+      <Shortcut>Class</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>NameSpace</ID>
+          <Type>String</Type>
+          <ToolTip>名前空間で置き換えます。</ToolTip>
+          <Default>NameSpace</Default>
+        </Literal>
+        <Literal>
+          <ID>ClassName</ID>
+          <Type>
+          </Type>
+          <ToolTip>クラス名で置き換えます。</ToolTip>
+          <Default>String</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="method decl"><![CDATA[Namespace $NameSpace$
+
+    Public Class $ClassName$
+
+    End Class
+
+End Namespace
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
