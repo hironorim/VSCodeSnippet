@@ -1,0 +1,34 @@
+<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>ResouceKey Validator</Title>
+    <Author>matsuura</Author>
+    <Shortcut>RequiredFieldValidatorr</Shortcut>
+    <AlternativeShortcuts>
+      <Shortcut Value="RequiredFieldValidator">asp:RequiredFieldValidatorr</Shortcut>
+      <Shortcut Value="CompareValidator">asp:CompareValidatorr</Shortcut>
+      <Shortcut Value="RangeValidator">asp:RangeValidatorr</Shortcut>
+      <Shortcut Value="RegularExpressionValidator">asp:RegularExpressionValidatorr</Shortcut>
+      <Shortcut Value="CustomValidator">asp:CustomValidatorr</Shortcut>
+    </AlternativeShortcuts>
+    <Description>リソースキー付き検証コントロール用のマークアップ スニペット</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>id</ID>
+        <ToolTip>id</ToolTip>
+        <Default>id</Default>
+      </Literal>
+      <Literal>
+        <ID>controltovalidate</ID>
+        <ToolTip>controltovalidate</ToolTip>
+        <Default>controltovalidate</Default>
+        <Function>PreviousControlID()</Function>
+      </Literal>
+    </Declarations>
+    <Code Language="html"><![CDATA[<asp:$shortcut$ ID="$id$" runat="server" ControlToValidate="$controltovalidate$" CssClass="NormalRed" Display="Dynamic" resourcekey="$id$.ErrorMessage" />$end$]]></Code>
+  </Snippet>
+</CodeSnippet>
